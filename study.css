@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Sono:wght@600&display=swap');
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+@keyframes trocaCor {
+    25% { background-color: red; }
+    50% { background-color: blue; }
+    100% { background-color: purple; }
+}
+@keyframes login {
+    50%{background-color: #77ffc0;}
+    60%{background-color: blueviolet;}
+    40%{background-color: gray;}
+}
+.main {
+    animation: trocaCor 10s infinite;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.direita {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.direita>h1 {
+    color: #77ffc0;
+    font-size: 3vw;
+
+
+}
+
+.esquerda {
+    width: 50vw;
+    height: 100vh;
+
+    justify-content: center;
+    align-items: center;
+    color: #77ffc0;
+}
+
+.card {
+    width: 50%;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    border-radius: 50px;
+    background: linear-gradient(45deg, purple, lightblue);
+    box-shadow: 0px 30px 40px black;
+}
+
+.card>h1 {
+    color: #77ffc0;
+    font-weight: 800;
+    margin: 0;
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+    font-weight: 800;
+}
+
+.text>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: linear-gradient(400deg, gray,white);
+    color: black;
+    font-size: 12pt;
+    box-shadow: 0px 15px 60px black;
+    outline: none;
+    box-sizing: border-box;
+    font-weight: 800;
+
+}
+
+.text>label {
+    margin-bottom: 10px;
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.text>input ::placeholder {
+    color: aqua;
+}
+
+.btn {
+    animation: login 3s infinite;
+    width: 100%;
+    padding: 16px 0px;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 5px;
+   
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px black;
+}
+
+.img {
+    width: 35vw;
+}
+
+@media only screen and (max-width: 950px) {
+    .card {
+        width: 85%;
+    }
+
+}
